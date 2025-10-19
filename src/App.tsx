@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 
 type SquareValue = "X" | "O" | null;
@@ -99,7 +99,7 @@ export default function App() {
 
   return (
     <div className="game">
-      <h1 className="game-title">Capstic tac toe  </h1>
+      <h1 className="game-title">Capstic tac toe </h1>
       <div className="game-board">
         <Board
           xIsNext={xIsNext}
