@@ -1,0 +1,93 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.status {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  min-height: 2.25rem;
+}
+
+.status .winner {
+  color: var(--color-win);
+  font-weight: 700;
+}
+
+.board-row {
+  display: flex;
+  gap: 10px;
+}
+
+.square {
+  background: var(--bg-secondary);
+  border: none;
+  border-radius: 12px;
+  width: 100px;
+  height: 100px;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.square:hover {
+  background: var(--bg-accent);
+  transform: translateY(-2px);
+}
+
+.square.x {
+  color: var(--color-x);
+}
+
+.square.o {
+  color: var(--color-o);
+}
+
+.square.winner {
+  background: var(--color-win);
+  color: var(--bg-primary);
+}
+
+.restart-button {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background-color: var(--bg-accent);
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+
+.restart-button:hover {
+  background-color: #4a4a8e;
+  transform: translateY(-2px);
+}
